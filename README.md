@@ -2,20 +2,18 @@
 
 A gallery to show all of your webcams to your friends.
 
-To start your Phoenix app:
+## Getting Started
 
-  1. Install dependencies with `mix deps.get`
-  2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  3. Start Phoenix endpoint with `mix phoenix.server`
+After you have cloned this repo, run the setup script to set up your machine
+with the necessary dependencies to run and test this app:
+
+    $ ./bin/setup
+
+After setting up, you can run the application using [Heroku Local]:
+
+    $ heroku local
+
+[Heroku Local]: https://devcenter.heroku.com/articles/heroku-local
+
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix

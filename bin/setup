@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set up Phoenix app.
+
+# Exit if any subcommand fails
+set -e
+
+# Install phoenix dependencies
+mix deps.get
+
+# Set up configurable environment variables
+if [ ! -f .env ]; then
+  cp .sample.env .env
+fi
+
+# Set up the database
+mix ecto.create && mix ecto.migrate
