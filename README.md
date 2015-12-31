@@ -17,3 +17,13 @@ After setting up, you can run the application using [Heroku Local]:
 
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+## Running Tests
+
+Make sure you have phantomjs webdriver running
+
+    $ phantomjs --wd
+
+Then run
+
+    $ mix test
