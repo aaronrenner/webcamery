@@ -8,6 +8,9 @@ set -e
 # Install phoenix dependencies
 mix deps.get
 
+# Install npm dependencies
+npm install
+
 # Set up configurable environment variables
 if [ ! -f .env ]; then
   cp .sample.env .env
