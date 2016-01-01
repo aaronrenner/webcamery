@@ -1,0 +1,11 @@
+@include media($medium-screen-up) {
+  .webcam-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .webcam.card {
+    width: 48%;
+  }
+}

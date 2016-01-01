@@ -1,0 +1,24 @@
+{
+  "name": "webcamery",
+  "description": "Gallery of Webcams",
+  "main": "",
+  "authors": [
+    "Aaron Renner <aaron@animascodelabs.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aaronrenner/webcamery",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "~3.0.3",
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2"
+  }
+}

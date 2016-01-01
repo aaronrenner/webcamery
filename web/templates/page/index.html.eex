@@ -1,10 +1,15 @@
-<div class="jumbotron">
-  <h2><%= gettext "Hi %{name}!", name: "Brad" %></h2>
-  <p class="lead">Here are your webcams.</p>
+<div class="webcam-grid">
+  <%= for webcam <- @webcams do %>
+    <div class="webcam card">
+      <div class="card-image">
+        <%= tag(:img, src: webcam.image_url) %>
+      </div>
+      <div class="card-header">
+        <%= webcam.name %>
+      </div>
+      <div class="card-copy">
+        <p>Bayfield, Colorado</p>
+      </div>
+    </div>
+  <% end %>
 </div>
-
-<%= for webcam <- @webcams do %>
-  <div class="webcam">
-    <%= tag(:img, src: webcam.image_url) %>
-  </div>
-<% end %>

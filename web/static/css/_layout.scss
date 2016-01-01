@@ -1,0 +1,21 @@
+.container {
+  @include outer-container;
+  padding: $base-spacing;
+}
+
+.header {
+  border-bottom: $base-border;
+  padding-bottom: $base-spacing;
+}
+
+.logo {
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  h2 {
+    color: $medium-gray;
+    margin: 0;
+  }
+}

@@ -54,6 +54,16 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    sass: {
+      options: {
+        includePaths: [
+          "bower_components/normalize-scss",
+          "bower_components/bourbon/app/assets/stylesheets",
+          "bower_components/neat/app/assets/stylesheets",
+          "web/static/css"
+        ]
+      }
     }
   },
 
