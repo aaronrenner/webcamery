@@ -1,0 +1,3 @@
+<h1><%= @webcam.name %></h1>
+
+<%= tag :img, src: @webcam.image_url %>

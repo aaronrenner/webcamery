@@ -1,6 +1,6 @@
 <div class="webcam-grid">
   <%= for webcam <- @webcams do %>
-    <div class="webcam card">
+    <a href="<%= webcam_path(@conn, :show, webcam) %>" class="webcam card">
       <div class="card-image">
         <%= tag(:img, src: webcam.image_url) %>
       </div>
@@ -10,6 +10,6 @@
       <div class="card-copy">
         <p>Bayfield, Colorado</p>
       </div>
-    </div>
+    </a>
   <% end %>
 </div>
