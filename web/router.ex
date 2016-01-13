@@ -7,6 +7,7 @@ defmodule Webcamery.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Webcamery.Auth, repo: Webcamery.Repo
   end
 
   pipeline :api do
@@ -18,6 +19,10 @@ defmodule Webcamery.Router do
 
     get "/", PageController, :index
     resources "/webcam", WebcamController, only: [:show]
+
+    get "/sign_in", SessionController, :new
+    resources "/sessions", SessionController,
+      singleton: true, only: [:create, :delete]
   end
 
   # Other scopes may use custom stacks.

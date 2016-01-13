@@ -18,6 +18,14 @@
           <h1>Webcamery!</h1>
           <h2>A gallery of awesome webcams</h2>
         </span>
+        <nav>
+          <%= if @current_user do %>
+            <%= link "Sign Out", to: session_path(@conn, :delete),
+                  method: "delete" %>
+          <% else %>
+            <%= link "Sign In", to: session_path(@conn, :new) %>
+          <% end %>
+        </nav>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

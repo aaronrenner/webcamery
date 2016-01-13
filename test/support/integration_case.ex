@@ -22,6 +22,7 @@ defmodule Webcamery.IntegrationCase do
       import Ecto.Query, only: [from: 2]
 
       import Webcamery.Router.Helpers
+      import Webcamery.TestHelpers
 
       hound_session
     end

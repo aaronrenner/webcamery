@@ -1,0 +1,15 @@
+<h1>Sign In</h1>
+
+<%= form_for @conn, session_path(@conn, :create), [as: :session], fn f -> %>
+  <div class="field-group">
+    <%= label f, :email %>
+    <%= text_input f, :email %>
+  </div>
+
+  <div class="field-group">
+    <%= label f, :password %>
+    <%= password_input f, :password %>
+  </div>
+
+  <%= submit "Sign in" %>
+<% end %>

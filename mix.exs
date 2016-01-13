@@ -19,7 +19,7 @@ defmodule Webcamery.Mixfile do
   def application do
     [mod: {Webcamery, []},
       applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-        :phoenix_ecto, :postgrex]]
+        :phoenix_ecto, :postgrex, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,6 +31,7 @@ defmodule Webcamery.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:comeonin, "~> 2.0"},
       {:cowboy, "~> 1.0"},
       {:gettext, "~> 0.9"},
       {:hound, "~> 0.7.4", only: :test},

@@ -23,6 +23,7 @@ defmodule Webcamery.ConnCase do
       alias Webcamery.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
+      import Webcamery.TestHelpers
 
       import Webcamery.Router.Helpers
 
