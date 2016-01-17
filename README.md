@@ -1,5 +1,8 @@
 # Webcamery
 
+[![Build
+Status](https://semaphoreci.com/api/v1/projects/b69c713a-4a4f-4e89-b3cd-1fab41581b7f/661481/badge.svg)](https://semaphoreci.com/aaronrenner/webcamery)
+
 A gallery to show all of your webcams to your friends.
 
 ## Getting Started
