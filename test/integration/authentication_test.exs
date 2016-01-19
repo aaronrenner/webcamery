@@ -1,4 +1,4 @@
-defmodule Integration.AuthenticationTest do
+defmodule Webcamery.IntegrationTests.AuthenticationTest do
   use Webcamery.IntegrationCase
 
   test "successful log in with email and password" do

@@ -1,4 +1,4 @@
-defmodule Integration.HomeTest do
+defmodule Webcamery.IntegrationTests.HomeTest do
   use Webcamery.IntegrationCase
 
   alias Webcamery.Repo
