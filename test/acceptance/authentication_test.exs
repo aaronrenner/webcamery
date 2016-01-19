@@ -1,5 +1,5 @@
-defmodule Webcamery.IntegrationTests.AuthenticationTest do
-  use Webcamery.IntegrationCase
+defmodule Webcamery.AuthenticationAcceptanceTest do
+  use Webcamery.AcceptanceCase
 
   test "successful log in with email and password" do
     insert_user email: "user@example.com", password: "secret"

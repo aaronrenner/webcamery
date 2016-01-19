@@ -1,4 +1,4 @@
-defmodule Webcamery.IntegrationCase do
+defmodule Webcamery.AcceptanceCase do
   @moduledoc """
   This module defines the test case to be used by
   hound integration tests.

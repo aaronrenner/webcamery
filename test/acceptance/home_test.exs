@@ -1,5 +1,5 @@
-defmodule Webcamery.IntegrationTests.HomeTest do
-  use Webcamery.IntegrationCase
+defmodule Webcamery.HomeAcceptanceTest do
+  use Webcamery.AcceptanceCase
 
   alias Webcamery.Repo
   alias Webcamery.Webcam
