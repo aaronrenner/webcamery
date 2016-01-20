@@ -19,6 +19,7 @@ defmodule Webcamery.ModelCase do
       alias Webcamery.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
+      import Webcamery.TestHelpers
       import Webcamery.ModelCase
     end
   end

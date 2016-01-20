@@ -19,6 +19,13 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+# Configure Guardian
+config :guardian, Guardian,
+  issuer: "Webcamery",
+  ttl: {30, :days},
+  secret_key: "XwFYytOF+7PwDXrmgqyfeezpstOXS/22Naby2l57qydsSsKNMs3TSyUYnnfuWYwL",
+  serializer: Webcamery.GuardianSerializer
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"

@@ -19,7 +19,7 @@
           <h2>A gallery of awesome webcams</h2>
         </span>
         <nav>
-          <%= if @current_user do %>
+          <%= if current_user(@conn) do %>
             <%= link "Sign Out", to: session_path(@conn, :delete),
                   method: "delete" %>
           <% else %>

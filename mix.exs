@@ -34,6 +34,7 @@ defmodule Webcamery.Mixfile do
       {:comeonin, "~> 2.0"},
       {:cowboy, "~> 1.0"},
       {:gettext, "~> 0.9"},
+      {:guardian, "~> 0.9.0"},
       {:hound, "~> 0.7.4", only: :test},
       {:phoenix, "~> 1.1.0"},
       {:phoenix_ecto, "~> 2.0"},

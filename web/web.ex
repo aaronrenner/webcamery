@@ -52,6 +52,7 @@ defmodule Webcamery.Web do
       import Webcamery.Router.Helpers
       import Webcamery.ErrorHelpers
       import Webcamery.Gettext
+      import Webcamery.Auth, only: [current_user: 1]
     end
   end
 
