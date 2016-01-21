@@ -20,8 +20,10 @@
         </span>
         <nav>
           <%= if current_user(@conn) do %>
-            <%= link "Sign Out", to: session_path(@conn, :delete),
-                  method: "delete" %>
+            <ul>
+              <li><%= link "Sign Out", to: session_path(@conn, :delete),
+                method: "delete" %></li>
+              <li><%= link "My Webcams", to: webcam_path(@conn, :index) %></li>
           <% else %>
             <%= link "Sign In", to: session_path(@conn, :new) %>
           <% end %>

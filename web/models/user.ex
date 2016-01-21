@@ -6,6 +6,8 @@ defmodule Webcamery.User do
     field :password, :string, virtual: true
     field :password_hash, :string
 
+    has_many :webcams, Webcamery.Webcam
+
     timestamps
   end
 

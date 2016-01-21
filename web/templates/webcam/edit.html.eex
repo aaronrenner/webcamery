@@ -1,0 +1,4 @@
+<h1>Edit Webcam</h1>
+
+<%= render "form.html", changeset: @changeset,
+      action: webcam_path(@conn, :update, @webcam) %>

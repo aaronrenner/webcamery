@@ -5,6 +5,8 @@ defmodule Webcamery.Webcam do
     field :name, :string
     field :image_url, :string
 
+    belongs_to :user, Webcamery.User
+
     timestamps
   end
 

@@ -1,0 +1,15 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <div class="form-group">
+    <%= label f, :name %>
+    <%= text_input f, :name %>
+    <%= error_tag f, :name %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :image_url %>
+    <%= text_input f, :image_url %>
+    <%= error_tag f, :image_url %>
+  </div>
+
+  <%= submit "Submit", class: "btn btn-primary" %>
+<% end %>

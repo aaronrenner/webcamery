@@ -1,3 +1,5 @@
 <h1><%= @webcam.name %></h1>
+<%= link "Edit", to: webcam_path(@conn, :edit, @webcam) %>
+<%= link "Delete", to: webcam_path(@conn, :delete, @webcam), method: :delete %>
 
 <%= tag :img, src: @webcam.image_url %>

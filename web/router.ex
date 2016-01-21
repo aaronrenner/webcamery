@@ -22,7 +22,7 @@ defmodule Webcamery.Router do
     pipe_through [:browser, :browser_session] # Use the default browser stack
 
     get "/", PageController, :index
-    resources "/webcam", WebcamController, only: [:show]
+    resources "/webcams", WebcamController
 
     get "/sign_in", SessionController, :new
     resources "/sessions", SessionController,

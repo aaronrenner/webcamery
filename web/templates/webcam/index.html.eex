@@ -1,0 +1,3 @@
+<h1>My Webcams</h1>
+
+<%= link "New", to: webcam_path(@conn, :new) %>

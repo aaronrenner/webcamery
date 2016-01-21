@@ -1,8 +1,6 @@
 defmodule Webcamery.HomeAcceptanceTest do
   use Webcamery.AcceptanceCase
 
-  alias Webcamery.Repo
-  alias Webcamery.Webcam
   alias Webcamery.Endpoint
 
   test "loading the home page" do
@@ -11,8 +9,9 @@ defmodule Webcamery.HomeAcceptanceTest do
   end
 
   test "shows multiple webcams" do
-    Repo.insert! %Webcam{name: "Camera 1", image_url: "http://www.example.com/image.jpg"}
-    Repo.insert! %Webcam{name: "Camera 2", image_url: "http://www.example.com/image_2.jpg"}
+    user = insert_user
+    insert_webcam(user)
+    insert_webcam(user)
 
     navigate_to "/"
 
@@ -20,7 +19,8 @@ defmodule Webcamery.HomeAcceptanceTest do
   end
 
   test "user navigates to webcam show page" do
-    webcam = Repo.insert! %Webcam{name: "Camera 1", image_url: "http://www.example.com/image.jpg"}
+    user = insert_user
+    webcam = insert_webcam(user)
 
     navigate_to "/"
     click_on_webcam(webcam)
