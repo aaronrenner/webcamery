@@ -36,7 +36,7 @@ defmodule Webcamery.Mixfile do
       {:gettext, "~> 0.9"},
       {:guardian, "~> 0.9.0"},
       {:hound, "~> 0.7.4", only: :test},
-      {:phoenix, "~> 1.1.0"},
+      {:phoenix, "~> 1.1.2"},
       {:phoenix_ecto, "~> 2.0"},
       {:phoenix_html, "~> 2.3"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
